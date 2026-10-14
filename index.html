@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gerenciador de tarefas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>TaskFlow</h1>
+            <div class="stat-container">
+                <div class="details">
+                    <h3>Organize seu dia</h3>
+                    <div id="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="stats-number">
+                    <p id="numbers">0 / 0</p>
+                </div>
+            </div>
+            <form class="input-area">
+                <input type="text" id="task-input" placeholder="Adicionar tarefa...">
+                <button type="submit" id="add-task"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            <div class="todos-container">
+    <ul id="task-list"></ul>
+</div>
+<img class="empty-image" src="./images/pessoa-tarefas.png" alt="empty">
+        </div>
+    </div>
+    <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.4.0/tsparticles.confetti.bundle.min.js"></script>
+          
+    
+</body>
+</html>
